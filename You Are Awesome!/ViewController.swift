@@ -17,15 +17,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func showMessagePressed(_ sender: UIButton) {
-        messageLabel.text = "You Are Awesome!"
+        if messageLabel.text == "You Are Awesome!" {
+            messageLabel.text = "You Are Great!"
+        }
+        else if messageLabel.text == "You Are Great!" {
+            messageLabel.text = "You Are Awesome!"
+        }
+        else {
+            messageLabel.text = "You Are Awesome!"
+        }
         messageLabel.textColor = UIColor.red
 
     }
     
-    @IBAction func showAnotherMessagePressed(_ sender: UIButton) {
-        messageLabel.text = "You Are Great!"
-        messageLabel.textColor = UIColor.blue
-    }
+   
     
 }
 
