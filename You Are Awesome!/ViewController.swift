@@ -14,14 +14,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("The View Loaded!")
         // Do any additional setup after loading the view.
     }
     @IBAction func showMessagePressed(_ sender: UIButton) {
         messageLabel.text = "You Are Awesome!"
+        messageLabel.textColor = UIColor.red
 
     }
     
-
+    @IBAction func showAnotherMessagePressed(_ sender: UIButton) {
+        messageLabel.text = "You Are Great!"
+        messageLabel.textColor = UIColor.blue
+    }
+    
 }
 
