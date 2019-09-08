@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     let numberOfImages = 10
     let numberOfSounds = 6
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var soundSwitch: UISwitch!
+    
+    
     @IBOutlet weak var awesomeImageView: UIImageView!
     var awesomePlayer = AVAudioPlayer()
     
@@ -48,6 +51,15 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func soundSwitchPressed(_ sender: UISwitch) {
+        
+        if soundSwitch.isOn == false && soundIndex != -1 {
+            awesomePlayer.stop()
+          
+        
+        }
+    }
+    
     @IBAction func showMessagePressed(_ sender: UIButton) {
         let messages = ["You are awesome!",
                         "You are great!",
@@ -69,9 +81,13 @@ class ViewController: UIViewController {
         awesomeImageView.image = UIImage(named: "image\(imageIndex)")
 
 // sound
+
+//        if soundSwitch.isOn == True {
+    if soundSwitch.isOn {
         soundIndex = nonRepeatingRandom(lastNumber: soundIndex, maxValue: numberOfSounds)
         let soundName = "sound\(soundIndex)"
         playSound(soundName: soundName, audioPlayer: &awesomePlayer)
+        }
     }
     
    
