@@ -11,12 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     var index = 0
     @IBOutlet weak var messageLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func showMessagePressed(_ sender: UIButton) {
         let messages = ["You are awesome!",
                         "You are great!",
@@ -30,7 +31,6 @@ class ViewController: UIViewController {
                         "you've got the design skills of jony ive!", "I can't wait to download your app!"]
         
         messageLabel.text = messages.randomElement()!
-        
         
 //        messageLabel.text = messages[index]
 //        if index == messages.count - 1 {
