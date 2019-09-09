@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Are_Awesome_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-8e-UYG">
-                                <rect key="frame" x="16" y="20" width="343" height="100"/>
+                                <rect key="frame" x="16" y="44" width="382" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Wot-Af-jih"/>
                                 </constraints>
@@ -28,10 +28,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEb-Sc-f6u">
-                                <rect key="frame" x="16" y="166" width="343" height="463"/>
+                                <rect key="frame" x="16" y="190" width="382" height="634"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2D-Nc-rg8">
-                                <rect key="frame" x="255" y="128" width="104" height="30"/>
+                                <rect key="frame" x="294" y="152" width="104" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="104" id="ZXA-BI-9pJ"/>
                                     <constraint firstAttribute="height" constant="30" id="hLA-HA-EUU"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Sound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCk-pa-u01">
-                                <rect key="frame" x="16" y="133" width="91" height="21"/>
+                                <rect key="frame" x="16" y="157" width="91" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6Q1-gb-4ae"/>
                                     <constraint firstAttribute="width" constant="91" id="rw4-kA-4pd"/>
@@ -52,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uep-KM-4I3">
-                                <rect key="frame" x="115" y="128" width="51" height="31"/>
+                                <rect key="frame" x="115" y="152" width="51" height="31"/>
                                 <connections>
                                     <action selector="soundSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="fuz-dv-K7I"/>
                                 </connections>
